@@ -35,6 +35,10 @@
 执行次数太多会用验证码弹窗，要手动过
 
 
+## 交流
+[telegram group](https://t.me/+RugHlc2d-g83YWY1)
+
+
 
 
 
