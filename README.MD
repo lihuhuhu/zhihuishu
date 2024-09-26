@@ -30,6 +30,9 @@
    + 远程代理：PROXY = {'https': f'ip:{port}', 'http': f'ip:{port}'}替换成你远程的ip
 
 ## 运行
+```angular2html
+pip install -r requirements.txt
+```
 执行main文件,看到窗口有不断的输出就行
 
 执行次数太多会用验证码弹窗，要手动过
