@@ -84,7 +84,8 @@ def handle_course(course_info: dict) -> None:
 
 def get_course() -> dict:
     url = 'https://onlineservice-api.zhihuishu.com/gateway/t/v1/student/course/share/queryShareCourseInfo'
-    cypher = {"status": 1, "pageNo": 1, "pageSize": 5}
+    # status=0 means that the course is not finished, status=1 means that the course is finished
+    cypher = {"status": 0, "pageNo": 1, "pageSize": 5}
     data = {
         'secretStr': encrypt(json.dumps(cypher, separators=(',', ':')), COURSE_KEY),
         'date': f'{int(time.time() * 1000)}',
